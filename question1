@@ -1,0 +1,42 @@
+read p
+sp=p/2;
+st=1; 
+for((m=1; m<=p; m++))
+do
+	
+	for((a=1; a<=p; a++))
+	do
+	echo -ne " ";
+	done
+	
+	
+	for((n=1; n<=m; n++))
+	do
+	echo -ne "#";
+	done
+
+	
+    
+	for((i=1; i<m; i++))
+	do
+	echo -ne "#";
+	done
+
+    if ((i<=p/2)) 
+    then
+
+				
+				sp=sp-1;
+				st=st+2;
+	
+
+			else 
+            
+
+				
+				sp=sp+1;
+				st=st-2;
+			fi
+	
+	echo;
+done
